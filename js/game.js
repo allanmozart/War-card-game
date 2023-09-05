@@ -16,30 +16,35 @@ let openCards = [];
 let gameOn = true;
 
 // Draw cards and check who wins
-const decideTurnWinner = () => {
+const drawCards = () => {
   openCards.unshift(playerHand.shift());
   openCards.unshift(computerHand.shift());
+  console.log(openCards);
+  // If players draw same cards, war starts:
   if (openCards[0].value === openCards[1].value) {
+    // If any of players does not have enough cards for war, end game
     if (playerHand.length < 4) {
-      console.log("You don't have enough cards to finish the war. You lose!");
       playerHand = [];
       return "computer";
     }
     if (computerHand.length < 4) {
-      console.log(
-        "Computer doesn't have enough cards to finish the war. You win!"
-      );
       computerHand = [];
       return "player";
     }
+    // Each player places 3 additional cards
     openCards.push(...playerHand.splice(0, 3));
     openCards.push(...computerHand.splice(0, 3));
-    decideTurnWinner();
+    // Cards are drawn again until turn winner is decided
+    console.log("draw again");
+    console.log(openCards);
+    drawCards();
   }
   if (openCards[0].value > openCards[1].value) {
+    console.log("comp w");
     return "computer";
   }
   if (openCards[0].value < openCards[1].value) {
+    console.log("p win");
     return "player";
   }
 };
@@ -48,7 +53,8 @@ const playTurn = () => {
   if (!gameOn) {
     return;
   }
-  const turnWin = decideTurnWinner();
+  const turnWin = drawCards();
+  //
   if (playerHand.length === 0) {
     console.log("You lose the game!");
     gameOn = false;
@@ -61,27 +67,10 @@ const playTurn = () => {
   }
   if (turnWin === "player") {
     playerHand = playerHand.concat(openCards);
-  } else if (turnWin === "computer") {
+  }
+  if (turnWin === "computer") {
     computerHand = computerHand.concat(openCards);
   }
   console.log(`comp: ${computerHand.length}, player: ${playerHand.length}`);
+  openCards = [];
 };
-
-console.log("-------------Before start--------------------");
-console.log(playerHand);
-console.log(computerHand);
-console.log("-------------First--------------------");
-playTurn();
-openCards = [];
-console.log(playerHand);
-console.log(computerHand);
-console.log("-------------Second--------------------");
-playTurn();
-openCards = [];
-console.log(playerHand);
-console.log(computerHand);
-console.log("-------------Third--------------------");
-playTurn();
-openCards = [];
-console.log(playerHand);
-console.log(computerHand);
