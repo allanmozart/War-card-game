@@ -51,9 +51,11 @@ class Game {
     }
     if (turnWin === "player") {
       this.playerHand = this.playerHand.concat(this.openCards);
+      return "player";
     }
     if (turnWin === "computer") {
       this.computerHand = this.computerHand.concat(this.openCards);
+      return "computer";
     }
   }
   resetOpenCards() {
