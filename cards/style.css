@@ -1,0 +1,107 @@
+.cardFrontRed {
+  height: 190px;
+  width: 124px;
+  border-radius: 5%;
+  border: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  color: red;
+  background-color: rgb(255, 252, 255);
+}
+.cardFront {
+  height: 190px;
+  width: 124px;
+  border-radius: 5%;
+  border: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 252, 255);
+}
+.valueCard,
+.valueCardBottom {
+  font-size: 1.2rem;
+  margin: 0 -15% 0 3%;
+}
+
+div {
+  font-size: 2.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 2.4rem;
+}
+
+.row1 {
+  gap: 5%;
+}
+
+.row3 {
+  gap: 5%;
+  height: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.row4,
+.row5 {
+  transform: rotate(180deg);
+}
+
+.row5 {
+  gap: 5%;
+}
+
+/*  Special for 10    */
+#row1Ten {
+  gap: 4%;
+  height: 1rem;
+  padding-bottom: 10px;
+  margin: 0 7% 0 0;
+}
+
+#row2Ten {
+  height: 1rem;
+  padding-bottom: 10px;
+}
+
+#row3Ten {
+  height: 1.5rem;
+  padding-bottom: 18px;
+}
+
+#row4Ten {
+  height: 1.5rem;
+  padding-bottom: 18px;
+  transform: rotate(180deg);
+}
+
+#row5Ten {
+  height: 1rem;
+  padding-bottom: 10px;
+  transform: rotate(180deg);
+}
+
+#row6Ten {
+  gap: 4%;
+  height: 1rem;
+  padding-bottom: 10px;
+  transform: rotate(180deg);
+  margin: 0 0 0 7%;
+}
+
+/*  Faces   */
+
+.row3Faces {
+  height: 7rem;
+}
+
+#cardBack {
+  height: 190px;
+  width: 124px;
+  border-radius: 5%;
+  border: 1px solid black;
+}
+
+img{
+height: 100%;
+width: 100%;;
+}
