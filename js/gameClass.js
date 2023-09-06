@@ -55,6 +55,8 @@ class Game {
     if (turnWin === "computer") {
       this.computerHand = this.computerHand.concat(this.openCards);
     }
+  }
+  resetOpenCards() {
     this.openCards = [];
   }
 }
