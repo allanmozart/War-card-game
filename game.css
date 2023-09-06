@@ -1,4 +1,5 @@
 @import url("./cardAnimation.css");
+@import url("./winGame.css");
 
 /* Meyer reset */
 html,
@@ -121,8 +122,8 @@ main {
 }
 
 /* Position cards: */
-.player-card,
-.computer-card,
+#player-card,
+#computer-card,
 #player-deck,
 #computer-deck {
   position: absolute;
@@ -130,12 +131,12 @@ main {
 }
 
 #player-deck,
-.player-card {
+#player-card {
   bottom: 3vh;
 }
 
 #computer-deck,
-.computer-card {
+#computer-card {
   top: 3vh;
 }
 
@@ -149,6 +150,7 @@ main {
   align-items: center;
   flex-direction: column;
   border-radius: 5px;
+  transform: translateX(-50%);
 }
 
 #player-deck,
@@ -167,4 +169,15 @@ main {
 
 #player-deck:hover {
   cursor: pointer;
+}
+
+/* Score */
+
+#score {
+  color: white;
+}
+
+#score > h2 {
+  text-decoration: underline;
+  font-weight: bold;
 }

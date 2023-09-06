@@ -21,8 +21,6 @@ const createCard = (name, color, symbol, id) => {
   cardFront.appendChild(cardValue);
   cardFront.appendChild(cardSymbol);
 
-  //   cardFront.style.animation = "display-front 5s";
-  //   cardBack.style.animation = "display-back 5s";
   cardContent.appendChild(cardFront);
   cardContent.appendChild(cardBack);
 

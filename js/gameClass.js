@@ -3,8 +3,17 @@ import { shuffleDeck, splitDeck } from "./manipulateDeck.js";
 class Game {
   constructor(deck) {
     [this.playerHand, this.computerHand] = splitDeck(shuffleDeck(deck));
+    // test
+    // this.playerHand = [{ value: 8, name: 8, symbol: "hearts", color: "red" }];
+    // this.computerHand = [
+    //   { value: 15, name: "ace", symbol: "hearts", color: "red" },
+    //   { value: 15, name: "ace", symbol: "clubs", color: "black" },
+    //   { value: 14, name: "king", symbol: "spades", color: "black" },
+    // ];
     this.openCards = [];
     this.gameOn = true;
+    this.winner = "";
+    this.animationRunning = false;
   }
 
   drawCards() {
@@ -42,11 +51,13 @@ class Game {
     const turnWin = this.drawCards();
     //
     if (this.playerHand.length === 0) {
-      gameOn = false;
+      this.gameOn = false;
+      this.winner = "Computer";
       return;
     }
     if (this.computerHand.length === 0) {
-      gameOn = false;
+      this.gameOn = false;
+      this.winner = "Player";
       return;
     }
     if (turnWin === "player") {

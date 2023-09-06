@@ -8,7 +8,8 @@ const animateComputerWin = (pCard, cCard) => {
   cCard.style.animation = "computer-win-c-card 5s";
 };
 
-const performAnimation = (winner, gameDiv) => {
+const performAnimation = (winner, gameDiv, game) => {
+  game.animationRunning = true;
   const pCard = document.getElementById("player-card");
   const cCard = document.getElementById("computer-card");
   pCard.classList.add("player-card", "card");
@@ -20,6 +21,7 @@ const performAnimation = (winner, gameDiv) => {
     gameDiv.removeChild(pCard);
     gameDiv.removeChild(cCard);
   }, 5000);
+  game.animationRunning = false;
 };
 
 export default performAnimation;
