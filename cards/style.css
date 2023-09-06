@@ -1,19 +1,29 @@
-#cardFront {
+.cardFrontRed {
   height: 190px;
   width: 124px;
   border-radius: 5%;
   border: 1px solid;
   display: flex;
   flex-wrap: wrap;
+  color: red;
+  background-color: rgb(255, 252, 255);
 }
-#valueCard,
-#valueCardBottom {
+.cardFront {
+  height: 190px;
+  width: 124px;
+  border-radius: 5%;
+  border: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 252, 255);
+}
+.valueCard,
+.valueCardBottom {
   font-size: 1.2rem;
   margin: 0 -15% 0 3%;
 }
 
 div {
-  color: red;
   font-size: 2.6rem;
   width: 100%;
   display: flex;
@@ -21,22 +31,22 @@ div {
   height: 2.4rem;
 }
 
-#row1 {
+.row1 {
   gap: 5%;
 }
 
-#row3 {
+.row3 {
   gap: 5%;
   height: 1.5rem;
   padding-bottom: 10px;
 }
 
-#row4,
-#row5 {
+.row4,
+.row5 {
   transform: rotate(180deg);
 }
 
-#row5 {
+.row5 {
   gap: 5%;
 }
 
@@ -62,14 +72,12 @@ div {
   height: 1.5rem;
   padding-bottom: 18px;
   transform: rotate(180deg);
-
 }
 
 #row5Ten {
   height: 1rem;
   padding-bottom: 10px;
   transform: rotate(180deg);
-
 }
 
 #row6Ten {
@@ -78,4 +86,22 @@ div {
   padding-bottom: 10px;
   transform: rotate(180deg);
   margin: 0 0 0 7%;
+}
+
+/*  Faces   */
+
+.row3Faces {
+  height: 7rem;
+}
+
+#cardBack {
+  height: 190px;
+  width: 124px;
+  border-radius: 5%;
+  border: 1px solid black;
+}
+
+img{
+height: 100%;
+width: 100%;;
 }
