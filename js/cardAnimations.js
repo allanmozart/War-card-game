@@ -8,6 +8,10 @@ const animateComputerWin = (pCard, cCard) => {
   cCard.style.animation = "computer-win-c-card 5s";
 };
 
+// To do:
+// animateWar - cards stay on center
+// animateWarDeck - additional cards
+
 const performAnimation = (winner, gameDiv, game) => {
   game.animationRunning = true;
   const pCard = document.getElementById("player-card");

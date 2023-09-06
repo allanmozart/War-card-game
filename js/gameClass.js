@@ -2,18 +2,38 @@ import { shuffleDeck, splitDeck } from "./manipulateDeck.js";
 
 class Game {
   constructor(deck) {
-    [this.playerHand, this.computerHand] = splitDeck(shuffleDeck(deck));
+    // [this.playerHand, this.computerHand] = splitDeck(shuffleDeck(deck));
     // test
-    // this.playerHand = [{ value: 8, name: 8, symbol: "hearts", color: "red" }];
-    // this.computerHand = [
-    //   { value: 15, name: "ace", symbol: "hearts", color: "red" },
-    //   { value: 15, name: "ace", symbol: "clubs", color: "black" },
-    //   { value: 14, name: "king", symbol: "spades", color: "black" },
-    // ];
+    this.playerHand = [
+      { value: 15, name: "ace", symbol: "hearts", color: "red" },
+      { value: 15, name: "ace", symbol: "clubs", color: "black" },
+      { value: 8, name: 8, symbol: "hearts", color: "red" },
+      { value: 10, name: 10, symbol: "spades", color: "black" },
+      { value: 9, name: 9, symbol: "hearts", color: "red" },
+      { value: 9, name: 9, symbol: "clubs", color: "black" },
+      { value: 9, name: 9, symbol: "diamonds", color: "red" },
+      { value: 9, name: 9, symbol: "spades", color: "black" },
+    ];
+    this.computerHand = [
+      { value: 15, name: "ace", symbol: "hearts", color: "red" },
+      { value: 15, name: "ace", symbol: "clubs", color: "black" },
+      { value: 14, name: "king", symbol: "spades", color: "black" },
+      { value: 8, name: 8, symbol: "spades", color: "black" },
+      { value: 7, name: 7, symbol: "hearts", color: "red" },
+      { value: 7, name: 7, symbol: "clubs", color: "black" },
+      { value: 7, name: 7, symbol: "diamonds", color: "red" },
+      { value: 7, name: 7, symbol: "spades", color: "black" },
+      { value: 6, name: 6, symbol: "hearts", color: "red" },
+      { value: 6, name: 6, symbol: "clubs", color: "black" },
+      { value: 6, name: 6, symbol: "diamonds", color: "red" },
+      { value: 6, name: 6, symbol: "spades", color: "black" },
+      { value: 5, name: 5, symbol: "hearts", color: "red" },
+    ];
     this.openCards = [];
     this.gameOn = true;
     this.winner = "";
     this.animationRunning = false;
+    this.warOn = false;
   }
 
   drawCards() {
@@ -30,6 +50,8 @@ class Game {
         this.computerHand = [];
         return "player";
       }
+      console.log("war starts");
+      this.warOn = true;
       // Each player places 3 additional cards
       this.openCards.push(...this.playerHand.splice(0, 3));
       this.openCards.push(...this.computerHand.splice(0, 3));
@@ -37,9 +59,13 @@ class Game {
       this.drawCards();
     }
     if (this.openCards[0].value > this.openCards[1].value) {
+      console.log("war ends");
+      this.warOn = "false";
       return "computer";
     }
     if (this.openCards[0].value < this.openCards[1].value) {
+      console.log("war ends");
+      this.warOn = "false";
       return "player";
     }
   }
