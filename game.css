@@ -1,3 +1,6 @@
+@import url("./cardAnimation.css");
+
+/* Meyer reset */
 html,
 body,
 div,
@@ -117,37 +120,6 @@ main {
   background-color: #00512c;
 }
 
-/* To be removed after: */
-/* ----------From here--------- */
-#cards-div {
-  margin: 20px;
-  display: flex;
-  gap: 20px;
-}
-
-.card {
-  aspect-ratio: 2/3;
-  height: 15vh;
-  border: 2px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 5px;
-}
-
-#computer-card-symbol,
-#player-card-symbol {
-  font-size: 100px;
-}
-
-#computer-card-value,
-#player-card-value {
-  font-size: 50px;
-}
-
-/* ----------To here--------- */
-
 /* Position cards: */
 .player-card,
 .computer-card,
@@ -167,86 +139,23 @@ main {
   top: 3vh;
 }
 
-@keyframes player-win-c-card {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: translateY(25vh) rotateY(0deg);
-  }
-  50% {
-    transform: translateY(25vh) rotateY(180deg);
-  }
-  75% {
-    transform: translateY(25vh) rotateY(0deg);
-  }
-
-  100% {
-    transform: translateY(70vh) rotateY(0deg);
-  }
-}
-
-@keyframes player-win-p-card {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: translateY(-25vh) rotateY(0deg);
-  }
-  50% {
-    transform: translateY(-25vh) rotateY(180deg);
-  }
-  75% {
-    transform: translateY(-25vh) rotateY(0deg);
-  }
-
-  100% {
-    transform: rotateY(0deg);
-  }
-}
-@keyframes computer-win-c-card {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: translateY(25vh) rotateY(0deg);
-  }
-  50% {
-    transform: translateY(25vh) rotateY(180deg);
-  }
-  75% {
-    transform: translateY(25vh) rotateY(0deg);
-  }
-
-  100% {
-    transform: rotateY(0deg);
-  }
-}
-
-@keyframes computer-win-p-card {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: translateY(-25vh) rotateY(0deg);
-  }
-  50% {
-    transform: translateY(-25vh) rotateY(180deg);
-  }
-  75% {
-    transform: translateY(-25vh) rotateY(0deg);
-  }
-
-  100% {
-    transform: translateY(-70vh) rotateY(0deg);
-  }
-}
-
 /* Style cards */
+.card {
+  aspect-ratio: 2/3;
+  height: 15vh;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
 #player-deck,
-#computer-deck {
+#computer-deck,
+.card-back {
   background-color: #e63946;
-  opacity: 0.8;
+  opacity: 1;
   background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
     linear-gradient(225deg, #f1faee 25%, transparent 25%),
     linear-gradient(45deg, #f1faee 25%, transparent 25%),

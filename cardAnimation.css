@@ -1,0 +1,246 @@
+@keyframes player-win-c-card {
+  0% {
+    transform: rotateY(180deg);
+    background-color: #e63946;
+    opacity: 0.8;
+    background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
+      linear-gradient(225deg, #f1faee 25%, transparent 25%),
+      linear-gradient(45deg, #f1faee 25%, transparent 25%),
+      linear-gradient(315deg, #f1faee 25%, #e63946 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    font-size: 0px;
+  }
+  25% {
+    transform: translateY(25vh) rotateY(180deg);
+    background-color: #e63946;
+    opacity: 0.8;
+    background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
+      linear-gradient(225deg, #f1faee 25%, transparent 25%),
+      linear-gradient(45deg, #f1faee 25%, transparent 25%),
+      linear-gradient(315deg, #f1faee 25%, #e63946 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    font-size: 0px;
+  }
+  50% {
+    transform: translateY(25vh) rotateY(0deg);
+    background-color: white;
+    background-image: none;
+    font-size: 30px;
+  }
+  75% {
+    transform: translateY(25vh) rotateY(180deg);
+    background-color: #e63946;
+    opacity: 0.8;
+    background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
+      linear-gradient(225deg, #f1faee 25%, transparent 25%),
+      linear-gradient(45deg, #f1faee 25%, transparent 25%),
+      linear-gradient(315deg, #f1faee 25%, #e63946 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    font-size: 0px;
+  }
+
+  100% {
+    transform: translateY(70vh) rotateY(180deg);
+    background-color: #e63946;
+    opacity: 0.8;
+    background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
+      linear-gradient(225deg, #f1faee 25%, transparent 25%),
+      linear-gradient(45deg, #f1faee 25%, transparent 25%),
+      linear-gradient(315deg, #f1faee 25%, #e63946 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    font-size: 0px;
+  }
+}
+
+@keyframes player-win-p-card {
+  0% {
+    transform: rotateY(180deg);
+    background-color: #e63946;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
+      linear-gradient(225deg, #f1faee 25%, transparent 25%),
+      linear-gradient(45deg, #f1faee 25%, transparent 25%),
+      linear-gradient(315deg, #f1faee 25%, #e63946 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    font-size: 0px;
+  }
+  25% {
+    transform: translateY(-25vh) rotateY(180deg);
+    background-color: #e63946;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
+      linear-gradient(225deg, #f1faee 25%, transparent 25%),
+      linear-gradient(45deg, #f1faee 25%, transparent 25%),
+      linear-gradient(315deg, #f1faee 25%, #e63946 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    font-size: 0px;
+  }
+  50% {
+    transform: translateY(-25vh) rotateY(0deg);
+    background-color: white;
+    background-image: none;
+    font-size: 30px;
+  }
+  75% {
+    transform: translateY(-25vh) rotateY(180deg);
+    background-color: #e63946;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
+      linear-gradient(225deg, #f1faee 25%, transparent 25%),
+      linear-gradient(45deg, #f1faee 25%, transparent 25%),
+      linear-gradient(315deg, #f1faee 25%, #e63946 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    font-size: 0px;
+  }
+
+  100% {
+    transform: rotateY(180deg);
+    background-color: #e63946;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
+      linear-gradient(225deg, #f1faee 25%, transparent 25%),
+      linear-gradient(45deg, #f1faee 25%, transparent 25%),
+      linear-gradient(315deg, #f1faee 25%, #e63946 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    font-size: 0px;
+  }
+}
+@keyframes computer-win-c-card {
+  0% {
+    transform: rotateY(180deg);
+    background-color: #e63946;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
+      linear-gradient(225deg, #f1faee 25%, transparent 25%),
+      linear-gradient(45deg, #f1faee 25%, transparent 25%),
+      linear-gradient(315deg, #f1faee 25%, #e63946 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    font-size: 0px;
+  }
+  25% {
+    transform: translateY(25vh) rotateY(180deg);
+    background-color: #e63946;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
+      linear-gradient(225deg, #f1faee 25%, transparent 25%),
+      linear-gradient(45deg, #f1faee 25%, transparent 25%),
+      linear-gradient(315deg, #f1faee 25%, #e63946 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    font-size: 0px;
+  }
+  50% {
+    transform: translateY(25vh) rotateY(0deg);
+    background-color: white;
+    background-image: none;
+    font-size: 30px;
+  }
+  75% {
+    transform: translateY(25vh) rotateY(180deg);
+    background-color: #e63946;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
+      linear-gradient(225deg, #f1faee 25%, transparent 25%),
+      linear-gradient(45deg, #f1faee 25%, transparent 25%),
+      linear-gradient(315deg, #f1faee 25%, #e63946 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    font-size: 0px;
+  }
+
+  100% {
+    transform: rotateY(180deg);
+    background-color: #e63946;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
+      linear-gradient(225deg, #f1faee 25%, transparent 25%),
+      linear-gradient(45deg, #f1faee 25%, transparent 25%),
+      linear-gradient(315deg, #f1faee 25%, #e63946 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    font-size: 0px;
+  }
+}
+
+@keyframes computer-win-p-card {
+  0% {
+    transform: rotateY(180deg);
+    background-color: #e63946;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
+      linear-gradient(225deg, #f1faee 25%, transparent 25%),
+      linear-gradient(45deg, #f1faee 25%, transparent 25%),
+      linear-gradient(315deg, #f1faee 25%, #e63946 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    font-size: 0px;
+  }
+  25% {
+    transform: translateY(-25vh) rotateY(180deg);
+    background-color: #e63946;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
+      linear-gradient(225deg, #f1faee 25%, transparent 25%),
+      linear-gradient(45deg, #f1faee 25%, transparent 25%),
+      linear-gradient(315deg, #f1faee 25%, #e63946 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    font-size: 0px;
+  }
+  50% {
+    transform: translateY(-25vh) rotateY(0deg);
+    background-color: white;
+    background-image: none;
+    font-size: 30px;
+  }
+  75% {
+    transform: translateY(-25vh) rotateY(180deg);
+    background-color: #e63946;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
+      linear-gradient(225deg, #f1faee 25%, transparent 25%),
+      linear-gradient(45deg, #f1faee 25%, transparent 25%),
+      linear-gradient(315deg, #f1faee 25%, #e63946 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    font-size: 0px;
+  }
+
+  100% {
+    transform: translateY(-70vh) rotateY(180deg);
+    background-color: #e63946;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
+      linear-gradient(225deg, #f1faee 25%, transparent 25%),
+      linear-gradient(45deg, #f1faee 25%, transparent 25%),
+      linear-gradient(315deg, #f1faee 25%, #e63946 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    font-size: 0px;
+  }
+}
