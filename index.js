@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const modal = document.getElementById("myModal");
     const closeModal = document.getElementById("closeModal");
     const gameNameInput = document.getElementById("gameNameInput");
-    const gameBoard = document.querySelector(".game-board");
+    //const gameBoard = document.querySelector(".game-board");
+    const gameBoard = document.getElementById("player-name");
     const confirmButton = document.getElementById("confirmGameName");
   
     startNewGameLink.addEventListener("click", function(event) {
@@ -34,10 +35,8 @@ document.addEventListener("DOMContentLoaded", function() {
     confirmButton.addEventListener("click", function() {
       const gameName = gameNameInput.value.trim(); // Remova espaços em branco
       if (gameName) {
-        const lastListItem = gameBoard.lastElementChild;
-        if(lastListItem && lastListItem.classList.contains("board")){
-            lastListItem.textContent= gameName
-        }  
+        const lastListItem = gameBoard;
+            lastListItem.textContent= gameName     
         modal.style.display = "none";
         gameNameInput.value = ""; // Limpa o campo de entrada
       }
