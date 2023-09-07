@@ -1,0 +1,175 @@
+@import url("./cardAnimation.css");
+@import url("./winGame.css");
+@import url("./cardLayout.css");
+
+/* Meyer reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 45px;
+  background-color: #f1faee;
+}
+
+footer {
+  height: 30px;
+  font-size: 22px;
+  color: #00512c;
+  background-color: #f1faee;
+  text-shadow: 2px 2px 3px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  flex: 1;
+  padding: 10px;
+  position: relative;
+  background-color: #00512c;
+}
+
+/* Position cards: */
+#player-card,
+#computer-card,
+#player-deck,
+#computer-deck {
+  position: absolute;
+  left: 50%;
+}
+
+#player-deck,
+#player-card {
+  bottom: 3vh;
+}
+
+#computer-deck,
+#computer-card {
+  top: 3vh;
+}
+
+/* Style cards */
+.card {
+  aspect-ratio: 2/3;
+  height: 15vh;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  transform: translateX(-50%) rotateY(180deg);
+}
+
+#player-deck,
+#computer-deck {
+  background: url("../data/images/fancyPattern.webp");
+}
+
+#player-deck:hover {
+  cursor: pointer;
+}
+
+/* Score */
+
+#score {
+  color: white;
+}
+
+#score > h2 {
+  text-decoration: underline;
+  font-weight: bold;
+}

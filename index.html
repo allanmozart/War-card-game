@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>War Game</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>War Game</title>
-  <link rel="stylesheet" href="./styles.css" />
-</head>
-
-<body>
-  <header>
-    <nav class="navbar">
-      <h1 class="logo"> War Game</h1>
-      <ul class="nav-menu">
-        <li class="nav-item"><a class="nav-link" id="startNewGame">Start New Game</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Save Game</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Load Game</a></li>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close" id="closeModal">&times;</span>
-        <input type="text" class="nav-input" placeholder="Enter your game name" id="gameNameInput">
-        <button id="confirmGameName"> Enter</button>
-      </div>
-    </div>
-    <div id="pc-name">computer</div>
-    <div id="board-game">
-
-      <div id="pc-deck">
-        <div class="flip-card">
-          <div class="flip-car-inner">
-            <div class="card-front">
-            </div>
-            <div class="card-back"></div>
-          </div>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1 class="logo">War Game</h1>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" id="startNewGame">Start New Game</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Save Game</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Load Game</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <input
+            type="text"
+            class="nav-input"
+            placeholder="Enter your game name"
+            id="gameNameInput"
+          />
+          <button id="confirmGameName">Enter</button>
         </div>
       </div>
+      <div id="pc-name">computer</div>
+      <div id="board-game">
+        <div id="pc-deck">
+          <div class="flip-card">
+            <div class="flip-car-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+          </div>
+        </div>
 
-      <div id="player-deck">
-        <div class="card-front"></div>
-        <div class="card-back"></div>
+        <div id="player-deck">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
       </div>
+      <div id="player-name">player 1</div>
+    </main>
+    <footer>This is footer.</footer>
 
-    </div>
-    <div id="player-name">player 1</div>
-  </main>
-  <footer>This is footer.</footer>
-
-  <script src="index.js"></script>
-</body>
-
+    <script src="index.js"></script>
+  </body>
 </html>

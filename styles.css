@@ -35,8 +35,8 @@ footer {
 }
 
 margin {
-    flex-grow: 1;
-  }
+  flex-grow: 1;
+}
 
 li {
   list-style: none;
@@ -153,13 +153,14 @@ li {
 #pc-deck {
   height: 20%;
   width: 12%;
-  border: 10px solid black;
+  border: 1px solid black;
 }
 
 #player-deck {
-    height: 20%;
-    width: 12%;
-  border: 10px solid black;
+  position: relative;
+  height: 20%;
+  width: 12%;
+  border: 1px solid black;
 }
 
 .modal {
@@ -188,4 +189,16 @@ li {
   right: 10px;
   top: 5px;
   cursor: pointer;
+}
+
+.card-front, .card-back{
+  position: absolute;
+  border: 20px red;
+  animation-name: cardMoveUp;
+  animation-duration: 4s;
+}
+
+@keyframes cardMoveUp {
+  0% {margin-bottom: 0px;}
+  100% {margin-bottom: 200px;}
 }

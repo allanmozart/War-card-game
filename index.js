@@ -48,4 +48,5 @@ document.addEventListener("DOMContentLoaded", function() {
         confirmButton.click(); // Clique no botão Confirm quando Enter for pressionado
       }
     });
-  });
+});
+  
