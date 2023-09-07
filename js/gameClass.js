@@ -7,7 +7,6 @@ class Game {
     this.gameOn = true;
     this.winner = "";
     this.animationRunning = false;
-    this.warOn = false;
   }
 
   drawCards() {
@@ -24,8 +23,6 @@ class Game {
         this.computerHand = [];
         return "player";
       }
-      console.log("war starts");
-      this.warOn = true;
       // Each player places 3 additional cards
       this.openCards.push(...this.playerHand.splice(0, 3));
       this.openCards.push(...this.computerHand.splice(0, 3));
@@ -33,12 +30,10 @@ class Game {
       this.drawCards();
     }
     if (this.openCards[0].value > this.openCards[1].value) {
-      console.log("war ends");
       this.warOn = "false";
       return "computer";
     }
     if (this.openCards[0].value < this.openCards[1].value) {
-      console.log("war ends");
       this.warOn = "false";
       return "player";
     }
