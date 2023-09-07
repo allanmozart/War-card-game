@@ -101,7 +101,12 @@ div {
   border: 1px solid black;
 }
 
-img{
+#imgFaces{
 height: 100%;
-width: 100%;;
+width: auto;
+}
+
+#fancyPattern{
+height: 100%;
+width: 100%;
 }
