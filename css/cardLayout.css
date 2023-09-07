@@ -1,0 +1,97 @@
+.cardFront {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.valueCard,
+.valueCardBottom {
+  margin: 0 -15% 0 3%;
+}
+
+.valueCard {
+  margin-top: -10px;
+}
+
+.card-layout-div {
+  width: 96%;
+  display: flex;
+  justify-content: center;
+}
+
+.row1 {
+  gap: 5%;
+  padding-top: 10px;
+}
+
+.row3 {
+  gap: 5%;
+  height: 15px;
+  padding-bottom: 10px;
+}
+
+.row4,
+.row5 {
+  transform: rotate(180deg);
+}
+
+.row5 {
+  gap: 5%;
+}
+
+/*  Special for 10    */
+#row1Ten {
+  gap: 4%;
+  /* height: 10px; */
+  padding-bottom: 10px;
+  /* margin: 0 7% 0 0; */
+}
+
+#row2Ten {
+  /* height: 10px; */
+  /* padding-bottom: 10px; */
+}
+
+#row3Ten {
+  /* height: 15px; */
+  padding-bottom: 18px;
+}
+
+#row4Ten {
+  /* height: 15px; */
+  padding-bottom: 18px;
+  transform: rotate(180deg);
+}
+
+#row5Ten {
+  /* height: 10px; */
+  padding-bottom: 10px;
+  transform: rotate(180deg);
+}
+
+#row6Ten {
+  gap: 4%;
+  /* height: 10px; */
+  padding-bottom: 10px;
+  transform: rotate(180deg);
+  margin: 0 0 0 7%;
+}
+
+/*  Faces   */
+
+.row3Faces {
+  height: 70px;
+}
+
+#cardBack {
+  height: 190px;
+  width: 124px;
+  border-radius: 5%;
+  border: 1px solid black;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}

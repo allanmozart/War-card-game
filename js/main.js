@@ -32,22 +32,8 @@ pDeck.addEventListener("click", () => {
   } // If game is not on or animation is still running, don't do anything
   game.resetOpenCards();
   let winner = game.playTurn();
-  gameDiv.appendChild(
-    createCard(
-      game.openCards[1].name,
-      game.openCards[1].color,
-      symbols[game.openCards[1].symbol],
-      "player-card"
-    )
-  );
-  gameDiv.appendChild(
-    createCard(
-      game.openCards[0].name,
-      game.openCards[0].color,
-      symbols[game.openCards[0].symbol],
-      "computer-card"
-    )
-  );
+  gameDiv.appendChild(createCard(game.openCards[1], "player-card"));
+  gameDiv.appendChild(createCard(game.openCards[0], "computer-card"));
   performAnimation(winner, gameDiv, game);
   playerScore.innerText = `Player: ${game.playerHand.length}`;
   computerScore.innerText = `Computer: ${game.computerHand.length}`;

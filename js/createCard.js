@@ -1,14 +1,8 @@
-const createCard = (name, color, symbol, id) => {
+const createCard1 = (name, color, symbol, id) => {
   const card = document.createElement("div");
-  const cardContent = document.createElement("div");
-  const cardFront = document.createElement("div");
-  const cardBack = document.createElement("div");
 
   card.id = id;
   card.classList.add("card");
-  cardContent.classList.add("card-content");
-  cardFront.classList.add("card-front");
-  cardBack.classList.add("card-back");
 
   const cardValue = document.createElement("h1");
   const cardSymbol = document.createElement("h1");
@@ -18,13 +12,18 @@ const createCard = (name, color, symbol, id) => {
   cardValue.style.color = color;
   cardSymbol.style.color = color;
 
-  cardFront.appendChild(cardValue);
-  cardFront.appendChild(cardSymbol);
+  card.appendChild(cardValue);
+  card.appendChild(cardSymbol);
 
-  cardContent.appendChild(cardFront);
-  cardContent.appendChild(cardBack);
+  return card;
+};
 
-  card.appendChild(cardContent);
+const createCard = (cardObject, id) => {
+  const card = document.createElement("div");
+  card.id = id;
+  card.classList.add("card");
+  card.innerHTML = cardObject.layout;
+  card.style.color = cardObject.color;
 
   return card;
 };

@@ -1,5 +1,6 @@
 @import url("./cardAnimation.css");
 @import url("./winGame.css");
+@import url("./cardLayout.css");
 
 /* Meyer reset */
 html,
@@ -150,21 +151,12 @@ main {
   align-items: center;
   flex-direction: column;
   border-radius: 5px;
-  transform: translateX(-50%);
+  transform: translateX(-50%) rotateY(180deg);
 }
 
 #player-deck,
-#computer-deck,
-.card-back {
-  background-color: #e63946;
-  opacity: 1;
-  background-image: linear-gradient(135deg, #f1faee 25%, transparent 25%),
-    linear-gradient(225deg, #f1faee 25%, transparent 25%),
-    linear-gradient(45deg, #f1faee 25%, transparent 25%),
-    linear-gradient(315deg, #f1faee 25%, #e63946 25%);
-  background-position: 10px 0, 10px 0, 0 0, 0 0;
-  background-size: 10px 10px;
-  background-repeat: repeat;
+#computer-deck {
+  background: url("../data/images/fancyPattern.webp");
 }
 
 #player-deck:hover {

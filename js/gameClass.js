@@ -2,33 +2,7 @@ import { shuffleDeck, splitDeck } from "./manipulateDeck.js";
 
 class Game {
   constructor(deck) {
-    // [this.playerHand, this.computerHand] = splitDeck(shuffleDeck(deck));
-    // test
-    this.playerHand = [
-      { value: 15, name: "ace", symbol: "hearts", color: "red" },
-      { value: 15, name: "ace", symbol: "clubs", color: "black" },
-      { value: 8, name: 8, symbol: "hearts", color: "red" },
-      { value: 10, name: 10, symbol: "spades", color: "black" },
-      { value: 9, name: 9, symbol: "hearts", color: "red" },
-      { value: 9, name: 9, symbol: "clubs", color: "black" },
-      { value: 9, name: 9, symbol: "diamonds", color: "red" },
-      { value: 9, name: 9, symbol: "spades", color: "black" },
-    ];
-    this.computerHand = [
-      { value: 15, name: "ace", symbol: "hearts", color: "red" },
-      { value: 15, name: "ace", symbol: "clubs", color: "black" },
-      { value: 14, name: "king", symbol: "spades", color: "black" },
-      { value: 8, name: 8, symbol: "spades", color: "black" },
-      { value: 7, name: 7, symbol: "hearts", color: "red" },
-      { value: 7, name: 7, symbol: "clubs", color: "black" },
-      { value: 7, name: 7, symbol: "diamonds", color: "red" },
-      { value: 7, name: 7, symbol: "spades", color: "black" },
-      { value: 6, name: 6, symbol: "hearts", color: "red" },
-      { value: 6, name: 6, symbol: "clubs", color: "black" },
-      { value: 6, name: 6, symbol: "diamonds", color: "red" },
-      { value: 6, name: 6, symbol: "spades", color: "black" },
-      { value: 5, name: 5, symbol: "hearts", color: "red" },
-    ];
+    [this.playerHand, this.computerHand] = splitDeck(shuffleDeck(deck));
     this.openCards = [];
     this.gameOn = true;
     this.winner = "";
