@@ -82,3 +82,20 @@
 .card-picture {
   max-height: 12vh;
 }
+
+@media (max-width: 320px) {
+  .card-layout-div {
+    font-size: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .card-layout-div {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 375px) {
+  .card-layout-div {
+    font-size: 14px;
+  }
+}

@@ -30,11 +30,9 @@ class Game {
       this.drawCards();
     }
     if (this.openCards[0].value > this.openCards[1].value) {
-      this.warOn = "false";
       return "computer";
     }
     if (this.openCards[0].value < this.openCards[1].value) {
-      this.warOn = "false";
       return "player";
     }
   }
