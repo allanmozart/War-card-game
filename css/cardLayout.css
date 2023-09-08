@@ -1,34 +1,71 @@
-.cardFront {
+.card-container {
   height: 100%;
   width: 100%;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
-  flex-wrap: wrap;
-  position: relative;
+  justify-content: center;
+  align-items: center;
 }
+.cardFront,
+.cardBack {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cardFront {
+  transform: rotateY(180deg);
+  background-color: white;
+  padding: 10px 0;
+}
+.cardBack {
+  background: url("../data/images/fancyPattern.webp");
+}
+
 .valueCard,
-.valueCardBottom {
-  margin: 0 -15% 0 3%;
+.valueCardBottom,
+.valueCardBottomPic {
+  position: absolute;
+  font-weight: bold;
 }
 
 .valueCard {
-  margin-top: -10px;
+  top: 0;
+  left: 6%;
+}
+.valueCardBottom {
+  top: -50%;
+  left: -8%;
+}
+
+.valueCardBottomPic {
+  top: -1.5vh;
+  left: -8%;
 }
 
 .card-layout-div {
-  width: 96%;
+  width: 80%;
   display: flex;
   justify-content: center;
 }
 
-.row1 {
-  gap: 5%;
-  padding-top: 10px;
-}
-
-.row3 {
-  gap: 5%;
-  height: 15px;
-  padding-bottom: 10px;
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+  height: 10%;
 }
 
 .row4,
@@ -36,12 +73,12 @@
   transform: rotate(180deg);
 }
 
-.row5 {
-  gap: 5%;
-}
-
 /*  Faces   */
 
 .row3 > img {
-  height: 80px;
+  height: 80%;
+}
+
+.card-picture {
+  max-height: 12vh;
 }

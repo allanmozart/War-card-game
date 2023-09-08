@@ -67,7 +67,9 @@ newGame.addEventListener("click", () => {
   playerScore.innerText = `26`;
   computerScore.innerText = `26`;
   pDeck.style.bottom = "2vh";
+  pDeck.style.transform = "translateX(-50%)";
   cDeck.style.top = "2vh";
+  cDeck.style.transform = "translateX(-50%)";
 });
 
 pDeck.addEventListener("click", () => {

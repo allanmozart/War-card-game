@@ -10,6 +10,10 @@
   --hover: #0088d2;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -75,7 +79,7 @@ p:hover {
 
 #player-deck,
 #computer-deck {
-  transform: translateX(-50%);
+  transform: translate(-50%, 50%);
   background: url("../data/images/fancyPattern.webp");
 }
 
@@ -96,33 +100,6 @@ p:hover {
   transform: translateX(-50%);
   transform-style: preserve-3d;
   position: relative;
-}
-
-.card-container {
-  height: 100%;
-  width: 100%;
-  transform-style: preserve-3d;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.cardFront,
-.cardBack {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  backface-visibility: hidden;
-  border-radius: 5px;
-}
-
-.cardFront {
-  transform: rotateY(180deg);
-  background-color: white;
-}
-.cardBack {
-  background: url("../data/images/fancyPattern.webp");
 }
 
 /* Score */
