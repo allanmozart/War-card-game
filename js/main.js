@@ -4,7 +4,7 @@ import performAnimation from "./cardAnimations.js";
 import createCard from "./createCard.js";
 import { winGame, removeWinGame } from "./winGame.js";
 
-// Navbar:
+// Navbar & footer:
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -17,7 +17,7 @@ hamburger.addEventListener("click", () => {
 const modal = document.getElementById("myModal");
 const closeModal = document.getElementById("closeModal");
 const gameNameInput = document.getElementById("gameNameInput");
-const gameBoard = document.getElementById("player-name");
+const playerName = document.getElementById("player-name");
 const confirmButton = document.getElementById("confirmGameName");
 
 // startNewGameLink.addEventListener("click", function (event) {
@@ -38,13 +38,12 @@ window.addEventListener("click", function (event) {
 
 // Adicionar valor ao último <li> quando o usuário confirmar
 confirmButton.addEventListener("click", function () {
-  const gameName = gameNameInput.value.trim(); // Remova espaços em branco
+  const gameName = gameNameInput.value; // Remova espaços em branco
   if (gameName) {
-    const lastListItem = gameBoard;
-    lastListItem.textContent = gameName;
-    modal.style.display = "none";
+    playerName.innerText = `${gameName}: `;
     gameNameInput.value = ""; // Limpa o campo de entrada
   }
+  modal.style.display = "none";
 });
 
 // Adicionar evento de tecla para capturar Enter
@@ -67,8 +66,8 @@ newGame.addEventListener("click", () => {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
   game = new Game(deck);
-  playerScore.innerText = `Player: 26`;
-  computerScore.innerText = `Computer: 26`;
+  playerScore.innerText = `26`;
+  computerScore.innerText = `26`;
 });
 
 pDeck.addEventListener("click", () => {
@@ -80,8 +79,8 @@ pDeck.addEventListener("click", () => {
   gameDiv.appendChild(createCard(game.openCards[1], "player-card"));
   gameDiv.appendChild(createCard(game.openCards[0], "computer-card"));
   performAnimation(winner, gameDiv, game);
-  playerScore.innerText = `Player: ${game.playerHand.length}`;
-  computerScore.innerText = `Computer: ${game.computerHand.length}`;
+  playerScore.innerText = `${game.playerHand.length}`;
+  computerScore.innerText = `${game.computerHand.length}`;
   if (!game.gameOn) {
     winGame(game.winner);
   }

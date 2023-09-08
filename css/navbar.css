@@ -6,6 +6,18 @@ header {
 footer {
   height: 30px;
   background-color: #101026;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer > div {
+  display: flex;
+}
+
+footer > div > p {
+  margin: 0px 2px;
 }
 
 margin {
@@ -44,6 +56,7 @@ li {
 
 .nav-link:hover {
   color: #0088d2;
+  cursor: pointer;
 }
 
 .hamburger {
@@ -97,7 +110,7 @@ li {
   }
 }
 
-#pc-name {
+/* #pc-name {
   background: green;
   width: 100%;
   height: 5%;
@@ -125,7 +138,7 @@ li {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 .modal {
   display: none;
