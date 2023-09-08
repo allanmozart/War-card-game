@@ -2,6 +2,10 @@
 
 Welcome to **War Game**, card game created using **JavaScript**, **CSS**, and **HTML**. In this game, you'll engage in an epic battle of cards against computer player, aiming to collect all the cards and emerge victorious. The rules are straightforward, and the excitement is endless.
 
+## Live page
+
+[War Game](https://allanmozart.github.io/War-card-game/)
+
 ## Rules
 
 War Game is a two-player card game where the objective is to collect all the cards. The deck is split into two halves, with each player receiving one half of the deck. Players take turns playing cards, and the player with the higher card wins and collects both cards. The game continues until one player runs out of cards.
