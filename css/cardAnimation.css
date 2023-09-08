@@ -17,7 +17,7 @@
 
   100% {
     transform: translate(-50%) rotateY(0deg);
-    top: 75%;
+    top: 78%;
   }
 }
 
@@ -83,6 +83,6 @@
 
   100% {
     transform: translate(-50%) rotateY(0deg);
-    bottom: 75%;
+    bottom: 78%;
   }
 }
