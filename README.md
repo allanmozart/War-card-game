@@ -13,7 +13,7 @@ In the event that both players play cards of the same value, a "war" is declared
 To get started with the War Game, follow these steps:
 
 1. Clone the repository to your local machine:
-   git clone https://github.com/yourusername/war-game.git
+   `git clone https://github.com/yourusername/war-game.git`
 2. Open the project folder in your code editor.
 3. Open the index.html file in your web browser to start playing.
 
