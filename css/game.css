@@ -99,11 +99,11 @@ body {
   flex-direction: column;
 }
 
-header {
+/* header {
   height: 45px;
   background-color: #f1faee;
-}
-
+} */
+/* 
 footer {
   height: 30px;
   font-size: 22px;
@@ -113,13 +113,14 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 main {
   flex: 1;
   padding: 10px;
   position: relative;
   background-color: #00512c;
+  /* z-index: 0; */
 }
 
 /* Position cards: */
