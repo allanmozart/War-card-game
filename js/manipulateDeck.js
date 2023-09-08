@@ -1,5 +1,5 @@
 const shuffleDeck = (deck) => {
-  return deck.slice().sort(() => 0.5 - Math.random());
+  return deck.sort(() => 0.5 - Math.random());
 };
 
 const splitDeck = (deck) => {

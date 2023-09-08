@@ -62,6 +62,7 @@ class Game {
       return "computer";
     }
   }
+
   resetOpenCards() {
     this.openCards = [];
   }
