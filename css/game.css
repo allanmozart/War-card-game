@@ -1,15 +1,21 @@
 @import url("./meyerReset.css");
-@import url("./cardAnimation2.css");
+@import url("./cardAnimation.css");
 @import url("./winGame.css");
 @import url("./cardLayout.css");
 @import url("./navbar.css");
+
+:root {
+  --font: "Noto Sans", sans-serif;
+  --background: #101026;
+  --hover: #0088d2;
+}
 
 body {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: "Noto Sans", sans-serif;
+  font-family: var(--font);
 }
 
 main {
@@ -30,22 +36,51 @@ p:hover {
 }
 
 /* Position cards: */
+#game {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
 #player-card,
-#computer-card,
-#player-deck,
-#computer-deck {
+#computer-card {
   position: absolute;
   left: 50%;
 }
 
-#player-deck,
 #player-card {
   bottom: 3vh;
 }
 
-#computer-deck,
 #computer-card {
   top: 3vh;
+}
+
+#player-deck,
+#computer-deck {
+  position: absolute;
+  left: 50%;
+  transition: 0.5s;
+}
+
+#player-deck,
+#computer-deck {
+  bottom: 50%;
+}
+
+/* #computer-deck {
+  top: 50;
+} */
+
+#player-deck,
+#computer-deck {
+  transform: translateX(-50%);
+  background: url("../data/images/fancyPattern.webp");
+}
+
+#player-deck:hover {
+  cursor: pointer;
 }
 
 /* Style cards */
@@ -88,16 +123,6 @@ p:hover {
 }
 .cardBack {
   background: url("../data/images/fancyPattern.webp");
-}
-
-#player-deck,
-#computer-deck {
-  transform: translateX(-50%) rotateY(180deg);
-  background: url("../data/images/fancyPattern.webp");
-}
-
-#player-deck:hover {
-  cursor: pointer;
 }
 
 /* Score */

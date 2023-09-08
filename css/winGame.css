@@ -5,7 +5,8 @@
   transform: translate(-50%, -50%);
   width: 200px;
   height: 60px;
-  background-color: white;
+  background-color: var(--background);
+  color: white;
   border: 2px solid black;
   display: flex;
   align-items: center;

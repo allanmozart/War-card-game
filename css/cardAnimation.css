@@ -1,118 +1,88 @@
 @keyframes player-win-c-card {
   0% {
-    transform: translateX(-50%) rotateY(180deg);
-    background: url("../data/images/fancyPattern.webp");
-    font-size: 0px;
+    transform: translateX(-50%) rotateY(0deg);
   }
   25% {
-    transform: translate(-50%, 25vh) rotateY(180deg);
-    background: url("../data/images/fancyPattern.webp");
-    font-size: 0px;
+    transform: translate(-50%) rotateY(0deg);
+    top: 30%;
   }
   50% {
-    transform: translate(-50%, 25vh) rotateY(0deg);
-    background-color: white;
-    background-image: none;
-    font-size: 16px;
+    transform: translate(-50%) rotateY(180deg);
+    top: 30%;
   }
   75% {
-    transform: translate(-50%, 25vh) rotateY(180deg);
-    background: url("../data/images/fancyPattern.webp");
-    font-size: 0px;
+    transform: translate(-50%) rotateY(0deg);
+    top: 30%;
   }
 
   100% {
-    transform: translate(-50%, 70vh) rotateY(180deg);
-    background: url("../data/images/fancyPattern.webp");
-    font-size: 0px;
+    transform: translate(-50%) rotateY(0deg);
+    top: 75%;
   }
 }
 
 @keyframes player-win-p-card {
   0% {
-    transform: translateX(-50%) rotateY(180deg);
-    background: url("../data/images/fancyPattern.webp");
-    font-size: 0px;
+    transform: translateX(-50%) rotateY(0deg);
   }
   25% {
-    transform: translate(-50%, -25vh) rotateY(180deg);
-    background: url("../data/images/fancyPattern.webp");
-    font-size: 0px;
+    transform: translate(-50%) rotateY(0deg);
+    bottom: 30%;
   }
   50% {
-    transform: translate(-50%, -25vh) rotateY(0deg);
-    background-color: white;
-    background-image: none;
-    font-size: 16px;
+    transform: translate(-50%) rotateY(180deg);
+    bottom: 30%;
   }
   75% {
-    transform: translate(-50%, -25vh) rotateY(180deg);
-    background: url("../data/images/fancyPattern.webp");
-    font-size: 0px;
+    transform: translate(-50%) rotateY(0deg);
+    bottom: 30%;
   }
 
   100% {
-    transform: translate(-50%) rotateY(180deg);
-    background: url("../data/images/fancyPattern.webp");
-    font-size: 0px;
+    transform: translate(-50%) rotateY(0deg);
   }
 }
 @keyframes computer-win-c-card {
   0% {
-    transform: translate(-50%) rotateY(180deg);
-    background: url("../data/images/fancyPattern.webp");
-    font-size: 0px;
+    transform: translateX(-50%) rotateY(0deg);
   }
   25% {
-    transform: translate(-50%, 25vh) rotateY(180deg);
-    background: url("../data/images/fancyPattern.webp");
-    font-size: 0px;
+    transform: translate(-50%) rotateY(0deg);
+    top: 30%;
   }
   50% {
-    transform: translate(-50%, 25vh) rotateY(0deg);
-    background-color: white;
-    background-image: none;
-    font-size: 16px;
+    transform: translate(-50%) rotateY(180deg);
+    top: 30%;
   }
   75% {
-    transform: translate(-50%, 25vh) rotateY(180deg);
-    background: url("../data/images/fancyPattern.webp");
-    font-size: 0px;
+    transform: translate(-50%) rotateY(0deg);
+    top: 30%;
   }
 
   100% {
-    transform: translateX(-50%) rotateY(180deg);
-    background: url("../data/images/fancyPattern.webp");
-    font-size: 0px;
+    transform: translate(-50%) rotateY(0deg);
   }
 }
 
 @keyframes computer-win-p-card {
   0% {
-    transform: translate(-50%) rotateY(180deg);
-    background: url("../data/images/fancyPattern.webp");
-    font-size: 0px;
+    transform: translateX(-50%) rotateY(0deg);
   }
   25% {
-    transform: translate(-50%, -25vh) rotateY(180deg);
-    background: url("../data/images/fancyPattern.webp");
-    font-size: 0px;
+    transform: translate(-50%) rotateY(0deg);
+    bottom: 30%;
   }
   50% {
-    transform: translate(-50%, -25vh) rotateY(0deg);
-    background-color: white;
-    background-image: none;
-    font-size: 16px;
+    transform: translate(-50%) rotateY(180deg);
+    bottom: 30%;
   }
   75% {
-    transform: translate(-50%, -25vh) rotateY(180deg);
-    background: url("../data/images/fancyPattern.webp");
-    font-size: 0px;
+    transform: translate(-50%) rotateY(0deg);
+    bottom: 30%;
   }
 
   100% {
-    transform: translate(-50%, -70vh) rotateY(180deg);
-    background: url("../data/images/fancyPattern.webp");
-    font-size: 0px;
+    transform: translate(-50%) rotateY(0deg);
+    bottom: 75%;
   }
 }

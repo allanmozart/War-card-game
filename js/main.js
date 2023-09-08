@@ -8,22 +8,16 @@ import { winGame, removeWinGame } from "./winGame.js";
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-});
-
 const modal = document.getElementById("myModal");
 const closeModal = document.getElementById("closeModal");
 const gameNameInput = document.getElementById("gameNameInput");
 const playerName = document.getElementById("player-name");
 const confirmButton = document.getElementById("confirmGameName");
 
-// startNewGameLink.addEventListener("click", function (event) {
-//   event.preventDefault();
-//   modal.style.display = "block";
-// });
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
 
 closeModal.addEventListener("click", function () {
   modal.style.display = "none";
@@ -52,9 +46,13 @@ gameNameInput.addEventListener("keyup", function (event) {
     confirmButton.click(); // Clique no botão Confirm quando Enter for pressionado
   }
 });
+
+// Gameplay:
+
 const newGame = document.getElementById("startNewGame");
 const gameDiv = document.querySelector("main");
 const pDeck = document.getElementById("player-deck");
+const cDeck = document.getElementById("computer-deck");
 const playerScore = document.getElementById("player-score");
 const computerScore = document.getElementById("computer-score");
 
@@ -68,6 +66,8 @@ newGame.addEventListener("click", () => {
   game = new Game(deck);
   playerScore.innerText = `26`;
   computerScore.innerText = `26`;
+  pDeck.style.bottom = "2vh";
+  cDeck.style.top = "2vh";
 });
 
 pDeck.addEventListener("click", () => {
